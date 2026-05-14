@@ -18,29 +18,62 @@
 
         <FrameLayout
             android:id="@android:id/tabcontent"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/tabMusic"
+                android:id="@+id/tabDog"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FF0000"
-                android:orientation="vertical" />
+                android:orientation="vertical" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/dog"/>
+            </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tabArtist"
+                android:id="@+id/tabCat"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#00FF00"
-                android:orientation="vertical" />
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/cat"/>
+            </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/tabAlbum"
+                android:id="@+id/tabRabbit"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#0000FF"
-                android:orientation="vertical" />
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/rabbit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tabHorse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0000FF"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/horse"/>
+            </LinearLayout>
+
         </FrameLayout>
     </LinearLayout>
 </TabHost>
